@@ -2,7 +2,7 @@
 """
 Created on Thu Mar 16 05:44:44 2017
 
-@author: 610776
+@author: Jyoti Ranjan Panda
 """
 import numpy as np
 import pandas as pd
@@ -10,8 +10,7 @@ data = np.genfromtxt('C:\\Users\\610776\\Downloads\\trainingtext.csv',delimiter=
 features = data[:, :3]
 targets = data[:, 1]
 
-#linear_svc_model = LinearSVC()
-#linear_svc_model.fit(X=features, y=targets)
+
 df=pd.read_csv('C:\\Users\\610776\\Downloads\\trainingtext.csv', sep=',',names=['feature', 'target'])
 print(df.feature[0])
 
